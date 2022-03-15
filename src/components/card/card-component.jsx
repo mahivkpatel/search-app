@@ -1,6 +1,6 @@
 import React from 'react'
 import './card.styles.css'
-
+import { shallow, mount, render } from 'enzyme'
 export const Card = (props) => {
   return (
     <div className="card-container" key={props.user.id}>

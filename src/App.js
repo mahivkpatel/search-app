@@ -15,7 +15,6 @@ class App extends Component {
   }
 
   handleChange = (e) => {
-    debugger
     this.setState({ searchValue: e.target.value })
   }
   render() {

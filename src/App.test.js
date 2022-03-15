@@ -1,8 +1,7 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from 'react'
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+import { shallow } from 'enzyme'
+import App from '../src/App'
+it('expect render App component', () => {
+  expect(shallow(<App />)).toMatchSnapshot()
+})
